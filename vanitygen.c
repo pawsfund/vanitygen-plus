@@ -525,6 +525,7 @@ main(int argc, char **argv)
 					"NYAN : Nyancoin : K\n"
 					"OK : OK Cash : P\n"
 					"OMC : Omnicoin : o\n"
+					"PAWS : PAWS : P\n"
 					"PIGGY : Piggycoin : p\n"
 					"PINK : Pinkcoin : 2\n"
 					"PIVX : PIVX : D\n"
@@ -1528,6 +1529,13 @@ main(int argc, char **argv)
 					"Generating Kore Address\n");
 					addrtype = 45;
 					privtype = 128;
+					break;		
+			}
+			if (strcmp(optarg, "PAWS")== 0) {
+				fprintf(stderr,
+					"Generating PAWS Address\n");
+					addrtype = 55;
+					privtype = 200;
 					break;		
 			}
 			break;

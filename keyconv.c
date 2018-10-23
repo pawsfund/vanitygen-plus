@@ -168,6 +168,7 @@ main(int argc, char **argv)
 					"NYAN : Nyancoin : K\n"
 					"OK : OK Cash : P\n"
 					"OMC : Omnicoin : o\n"
+					"PAWS : PAWS : P\n"
 					"PIGGY : Piggycoin : p\n"
 					"PINK : Pinkcoin : 2\n"
 					"PIVX : PIVX : D\n"
@@ -1162,13 +1163,21 @@ main(int argc, char **argv)
 					addrtype_opt = 65;
 					privtype_opt = 193;
 					break;
-                        }
-                        else
+			}
+            else
 			if (strcmp(optarg, "KORE")== 0) {
 				fprintf(stderr,
 					"Decrypting Kore Address\n");
 					addrtype_opt = 45;
 					privtype_opt = 128;
+					break;		
+			}
+			else
+			if (strcmp(optarg, "PAWS")== 0) {
+				fprintf(stderr,
+					"Decrypting PAWS Address\n");
+					addrtype_opt = 55;
+					privtype_opt = 200;
 					break;		
 			}
 			break;
